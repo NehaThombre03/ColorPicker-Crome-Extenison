@@ -1,0 +1,80 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.popup {
+  width: 350px;
+  background: #fff;
+  border: 1px solid black;
+}
+.popup :where(.picker, header, .all-colors) {
+  display: flex;
+  align-items: center;
+}
+.popup .picker {
+  padding: 30px 0;
+  background: url(data:image/png;base64,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);
+  justify-content: center;
+}
+.picker #color-picker {
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background: #ff7900;
+  transition: 0.3s ease;
+}
+#color-picker:hover {
+  background: #f16d20;
+}
+.picked-colors {
+  margin: 10px 15px;
+}
+.picked-colors header {
+  justify-content: space-between;
+}
+header .title {
+  font-size: 1rem;
+}
+header .clear-all {
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #5372F0;
+}
+header .clear-all:hover {
+  color: #143feb;
+}
+.picked-colors.hide {
+  display: none;
+}
+.picked-colors .all-colors {
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 10px 0 15px;
+}
+.all-colors .color {
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 10px;
+  width: calc(100% / 3);
+}
+.all-colors .rect {
+  height: 21px;
+  width: 21px;
+  display: block;
+  margin-right: 8px;
+  border-radius: 5px;
+}
+.all-colors .color span {
+  font-size: 0.96rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "Open sans";
+}
